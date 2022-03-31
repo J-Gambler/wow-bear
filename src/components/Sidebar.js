@@ -14,7 +14,7 @@ const links = [
     // { to: '/profile', title: 'Profile' },
     // { to: '/leaderboards', title: 'Leader Boards' },
     { to: 'https://bullorbear.com', title: 'BullorBear', external: true },
-    { to: 'https://discord.gg/bullorbear', title: 'Discord', external: true },
+    { to: 'https://discord.gg/bullorbear', title: 'Join our Discord', external: true },
 ]
 export default function Sidebar ( {handleDrawerOpen, drawerOpen} )  {
     return (

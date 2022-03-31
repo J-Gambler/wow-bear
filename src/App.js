@@ -4,6 +4,7 @@ import { Container } from '@mui/material';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import customTheme from './config/theme';
 import { useState } from 'react';
@@ -26,6 +27,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
           </Routes>
+          <Footer />
         </BrowserRouter>
       </div>
     </ThemeProvider>
