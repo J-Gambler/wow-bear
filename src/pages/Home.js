@@ -14,7 +14,7 @@ const Home = () => {
     }, [])
 
     return (
-        <Container sx={{  pt: 20 }}>
+        <Container sx={{  pt: 20, pb: 10 }}>
             <Register />
             <Lookup />
             <Nftlist />

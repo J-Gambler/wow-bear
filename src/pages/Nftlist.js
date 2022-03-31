@@ -18,11 +18,11 @@ export default function Nftlist () {
     return (
         <Box>
             {nftlists.map((element, key) => 
-            <Stack flexDirection={ matchUpMd ? (key % 2  ? "row-reverse": "row") : "column" } key={key} alignItems="center" gap={2}>
+            <Stack flexDirection={ matchUpMd ? (key % 2  ? "row": "row-reverse") : "column" } key={key} alignItems="center" gap={2}>
                 <Box sx={{ flex: '1' }}>
                     <Image src={element.image} />
                 </Box>
-                <Typography variant="h1" sx={{ flex: '1', textAlign: key % 2 ? 'right' : 'left', fontWeight: 400 }} >{element.description}</Typography>
+                <Typography variant="h1" sx={{ flex: '1', textAlign: key % 2 ? 'left' : 'right', fontWeight: 400 }} >{element.description}</Typography>
             </Stack>
             )}
         </Box>
