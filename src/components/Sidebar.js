@@ -6,13 +6,13 @@ import CloseIcon from '@mui/icons-material/Close';
 
 const links = [
     { to: '/', title: 'Home' },
-    { to: '/register', title: 'Register' },
-    { to: '/lookup', title: 'Look Up' },
-    { to: '/nftlist', title: 'NFT List' },
-    { to: '/coins', title: 'Coins' },
-    { to: '/call', title: 'Call' },
-    { to: '/profile', title: 'Profile' },
-    { to: '/leaderboards', title: 'Leader Boards' },
+    // { to: '/register', title: 'Register' },
+    // { to: '/lookup', title: 'Look Up' },
+    // { to: '/nftlist', title: 'NFT List' },
+    // { to: '/coins', title: 'Coins' },
+    // { to: '/call', title: 'Call' },
+    // { to: '/profile', title: 'Profile' },
+    // { to: '/leaderboards', title: 'Leader Boards' },
     { to: 'https://bullorbear.com', title: 'BullorBear', external: true },
     { to: 'https://discord.gg/bullorbear', title: 'Discord', external: true },
 ]

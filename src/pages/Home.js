@@ -1,8 +1,28 @@
-import { Box } from '@mui/material';
+import { Box, Container } from '@mui/material';
+import { useEffect } from 'react';
+import Call from './Call';
+import Coins from './Coins';
+import LeaderBoards from './LeaderBoards';
+import Lookup from './Lookup';
+import Nftlist from './Nftlist';
+import Profile from './Profile';
+import Register from './Register';
 
 const Home = () => {
+    useEffect(() => {
+
+    }, [])
+
     return (
-        <></>
+        <Container sx={{  pt: 20 }}>
+            <Register />
+            <Lookup />
+            <Nftlist />
+            <Coins />
+            <Call />
+            <Profile />
+            <LeaderBoards />
+        </Container>
     );
 }
 
