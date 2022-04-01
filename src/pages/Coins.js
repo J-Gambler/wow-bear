@@ -17,7 +17,7 @@ export default function Coins () {
     return (
         <Box>
             {coins.map((element, key) => 
-            <Stack flexDirection={ matchUpMd ? (key % 2  ? "row-reverse": "row") : "column" } key={key} alignItems="center" gap={2}>
+            <Stack flexDirection={ matchUpMd ? (key % 2  ? "row-reverse": "row") : "column-reverse" } key={key} alignItems="center" gap={2}>
                 <Box sx={{ flex: '1' }}>
                     <Image src={element.image} />
                 </Box>

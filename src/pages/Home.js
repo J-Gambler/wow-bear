@@ -16,7 +16,7 @@ const Home = () => {
 
     return (
         <Container sx={{  pt: 20, pb: 10 }}>
-            <Stack gap={2}>
+            <Stack gap={10}>
                 <Overview />
                 <Register />
                 <Lookup />

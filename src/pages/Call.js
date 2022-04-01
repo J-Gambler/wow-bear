@@ -23,7 +23,7 @@ export default function Call () {
     return (
         <Stack gap={2}>
             {calls.map((element, key) => 
-            <Stack flexDirection={ matchUpMd ? (key % 2  ? "row": "row-reverse") : "column" } key={key} alignItems="center" gap={2}>
+            <Stack flexDirection={ matchUpMd ? (key % 2  ? "row": "row-reverse") : "column-reverse" } key={key} alignItems="center" gap={2}>
                 <Box sx={{ flex: '1' }}>
                     <Image src={element.image} />
                 </Box>
