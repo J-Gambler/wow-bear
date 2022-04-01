@@ -5,13 +5,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import LogoIcon from '../assets/icons/LogoIcon';
 import DiscordIcon from '../assets/icons/DiscordIcon';
 
-const Image = styled('img')({
-    maxWidth: '40px',
-    width: '100%',
-    height: 'auto'
-})
-
-const Header = ({handleDrawerOpen, drawerOpen}) => {
+const Header = ({handleDrawerOpen}) => {
     const theme = useTheme();
     const matchUpSm = useMediaQuery(theme.breakpoints.up('sm'));
     return (
