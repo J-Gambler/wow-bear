@@ -1,8 +1,13 @@
-import { Box, Stack, Typography, Drawer } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Box, Stack, Typography, Drawer, Link } from '@mui/material';
+// import { Link } from 'react-router-dom';
 import IconButton from '@mui/material/IconButton';
 // import { black } from '@mui/material/colors';
 import CloseIcon from '@mui/icons-material/Close';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+// import DiscordIcon from '@mui/icons-material/Discord'
+import DiscordIcon from '../assets/icons/DiscordIcon';
+import { pink, blue } from '@mui/material/colors';
 
 const links = [
     { to: '/', title: 'Home' },
@@ -14,7 +19,7 @@ const links = [
     // { to: '/profile', title: 'Profile' },
     // { to: '/leaderboards', title: 'Leader Boards' },
     { to: 'https://bullorbear.com', title: 'BullorBear', external: true },
-    { to: 'https://discord.gg/bullorbear', title: 'Join our Discord', external: true },
+    { to: 'https://discord.gg/bullorbear', title: 'Discord', external: true },
 ]
 export default function Sidebar ( {handleDrawerOpen, drawerOpen} )  {
     return (
@@ -58,16 +63,19 @@ export default function Sidebar ( {handleDrawerOpen, drawerOpen} )  {
                 }}
             >
                 {links.map( (element, key) => 
-                    element.external 
-                    ?
-                    <a href={element.to} target="_blank" key={key}>
+                    <a href={element.to} key={key}>
                         <Typography component="span" variant="h2">{element.title}</Typography>
                     </a>
-                    : 
-                    <Link to={element.to} key={key}>
-                        <Typography component="span" variant="h2">{element.title}</Typography>
-                    </Link>
                 )}
+                <Stack flexDirection="row" gap={2} pt={3} alignItems="center">
+                    <TwitterIcon 
+                        sx={{ color: blue[500] }} />
+                    <InstagramIcon 
+                        sx={{ color: pink[500] }} />
+                    <DiscordIcon 
+
+                        />
+                </Stack>
             </Stack>
         </Drawer>
     );

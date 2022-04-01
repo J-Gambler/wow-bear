@@ -1,11 +1,9 @@
 import * as React from 'react';
 import { useTheme, styled } from '@mui/material/styles';
 import { AppBar, Box, Container, IconButton, Link, Stack, Toolbar, Typography, useMediaQuery } from '@mui/material';
-import { pink, blue } from '@mui/material/colors';
 import MenuIcon from '@mui/icons-material/Menu';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LogoImage from '../assets/images/Logo.png';
+import LogoIcon from '../assets/icons/LogoIcon';
+import DiscordIcon from '../assets/icons/DiscordIcon';
 
 const Image = styled('img')({
     maxWidth: '40px',
@@ -18,33 +16,26 @@ const Header = ({handleDrawerOpen, drawerOpen}) => {
     const matchUpSm = useMediaQuery(theme.breakpoints.up('sm'));
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="fixed" sx={{ boxShadow: 'unset' }}>
+            <AppBar position="fixed" sx={{ boxShadow: 'unset', p: 2, bgcolor: '#87AED0' }}>
                 <Container>
-                    <Toolbar sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
-                        <IconButton
-                            size="large"
-                            edge="start"
-                            color="inherit"
-                            aria-label="menu"
-                            sx={{ mr: 2 }}
-                            onClick={handleDrawerOpen}
-                        >
-                            <MenuIcon fontSize="large" />
-                        </IconButton>
-                        <Typography variant="h1" component="div" sx={{ flexGrow: 1, display: matchUpSm ? 'block' : 'none' }}>
-                            <Image src={LogoImage} />
-                        </Typography>
-                        <Stack flexDirection="row" alignItems="center" gap={2}>
-                            <Link href="">
-                                <TwitterIcon 
-                                    fontSize="large"
-                                    sx={{ color: blue[500] }} />
+                    <Toolbar sx={{ flexDirection: matchUpSm ? 'row' : 'column', justifyContent: 'space-between', alignItems: matchUpSm ? 'center': 'flex-start' }}>
+                        <Stack>
+                            <LogoIcon />
+                        </Stack>
+                        <Stack flexDirection="row" gap={5} alignItems="center">
+                            <Link href="https://discord.gg/bullorbear">
+                                <DiscordIcon />
                             </Link>
-                            <Link href="">
-                                <InstagramIcon 
-                                    fontSize="large"
-                                    sx={{ color: pink[500] }} />
-                            </Link>
+                            <IconButton
+                                size="large"
+                                edge="start"
+                                color="inherit"
+                                aria-label="menu"
+                                sx={{ mr: 2 }}
+                                onClick={handleDrawerOpen}
+                            >
+                                <MenuIcon fontSize="large" sx={{ color: 'white' }} />
+                            </IconButton>
                         </Stack>
                     </Toolbar>
                 </Container>
