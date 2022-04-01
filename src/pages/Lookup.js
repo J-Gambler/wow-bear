@@ -17,7 +17,7 @@ export default function Lookup () {
     const theme = useTheme();
     const matchUpMd = useMediaQuery(theme.breakpoints.up('md'));
     return (
-        <Box>
+        <Stack gap={2}>
             {lookups.map((element, key) => 
             <Stack flexDirection={ matchUpMd ? (key % 2  ? "row": "row-reverse") : "column" } key={key} alignItems="center" gap={2}>
                 <Box sx={{ flex: '1' }}>
@@ -26,6 +26,6 @@ export default function Lookup () {
                 <Typography variant="h1" sx={{ flex: '1', textAlign: key % 2 ? 'left' : 'right', fontWeight: 400 }} >{element.description}</Typography>
             </Stack>
             )}
-        </Box>
+        </Stack>
     );
 }

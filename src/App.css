@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: 'Gilroy-ExtraBold';
+  src: url('./assets/fonts/FontsFree-Net-Gilroy-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url('./assets/fonts/FontsFree-Net-Gilroy-Light.ttf');
+}

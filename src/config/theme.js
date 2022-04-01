@@ -1,4 +1,4 @@
-import { createTheme, responsiveFontSizes } from "@mui/material/styles";
+import { createTheme } from "@mui/material/styles";
 
 const myTheme = createTheme({
     root: {
@@ -11,18 +11,18 @@ const myTheme = createTheme({
         }
     },
     typography: {
-        fontFamily: "Lato, Arial",
-        fontSize: 12,
+        fontFamily: "Gilroy-Light",
+        fontSize: 18,
+        fontWeight: 400,
         h1: {
-            fontFamily: "Lato, Arial",
-            fontSize: 30,
-            fontWeight: 700,
+            fontFamily: "Gilroy-ExtraBold",
+            fontSize: 40,
+            fontWeight: 500,
         },
         h2: {
-            fontFamily: "Lato, Arial",
-            fontSize: 20,
-            fontWeight: 700,
-            paddingBottom: 20,
+            fontFamily: "Gilroy-ExtraBold",
+            fontSize: 32,
+            fontWeight: 500,
         },
     },
     overrides: {
@@ -34,4 +34,4 @@ const myTheme = createTheme({
     },
 })
 
-export default responsiveFontSizes(createTheme(myTheme));
+export default createTheme(myTheme);

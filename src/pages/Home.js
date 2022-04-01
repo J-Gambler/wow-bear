@@ -1,5 +1,6 @@
-import { Box, Container } from '@mui/material';
+import { Container, Stack } from '@mui/material';
 import { useEffect } from 'react';
+import Overview from './Overview';
 import Call from './Call';
 import Coins from './Coins';
 import LeaderBoards from './LeaderBoards';
@@ -14,14 +15,17 @@ const Home = () => {
     }, [])
 
     return (
-        <Container sx={{  pt: 20, pb: 10 }}>
-            <Register />
-            <Lookup />
-            <Nftlist />
-            <Coins />
-            <Call />
-            <Profile />
-            <LeaderBoards />
+        <Container sx={{  pt: 15, pb: 10 }}>
+            <Stack gap={2}>
+                <Overview />
+                <Register />
+                <Lookup />
+                <Nftlist />
+                <Coins />
+                <Call />
+                <Profile />
+                <LeaderBoards />
+            </Stack>
         </Container>
     );
 }
