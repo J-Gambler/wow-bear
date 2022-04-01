@@ -12,10 +12,10 @@ const Image = styled('img')({
 })
 
 const calls = [
-    { image: BuyNFTImage, description: 'Buy NFT' },
-    { image: BuyCryptoImage, description: 'Buy Crypto' },
-    { image: SellNFTImage, description: 'Sell NFT' },
-    { image: SellCryptoImage, description: 'Sell Crypto' }
+    { image: BuyNFTImage, description: '/Buy NFT' },
+    { image: BuyCryptoImage, description: '/Buy Crypto' },
+    { image: SellNFTImage, description: '/Sell NFT' },
+    { image: SellCryptoImage, description: '/Sell Crypto' }
 ]
 export default function Call () {
     const theme = useTheme();
@@ -27,7 +27,7 @@ export default function Call () {
                 <Box sx={{ flex: '1' }}>
                     <Image src={element.image} />
                 </Box>
-                <Typography variant="h1" sx={{ flex: '1', textAlign: key % 2 ? 'left' : 'right', fontWeight: 400 }} >{element.description}</Typography>
+                <Typography variant="h2" sx={{ flex: '1', textAlign: key % 2 ? 'left' : 'right', fontWeight: 400 }} >{element.description}</Typography>
             </Stack>
             )}
         </Stack>

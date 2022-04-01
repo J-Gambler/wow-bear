@@ -64,17 +64,21 @@ export default function Sidebar ( {handleDrawerOpen, drawerOpen} )  {
             >
                 {links.map( (element, key) => 
                     <a href={element.to} key={key}>
-                        <Typography component="span" variant="h2">{element.title}</Typography>
+                        <Typography component="span" variant="h3">{element.title}</Typography>
                     </a>
                 )}
                 <Stack flexDirection="row" gap={2} pt={3} alignItems="center">
-                    <TwitterIcon 
-                        sx={{ color: blue[500] }} />
-                    <InstagramIcon 
-                        sx={{ color: pink[500] }} />
-                    <DiscordIcon 
-
-                        />
+                    <Link href="https://twitter.com/bullorbear">
+                        <TwitterIcon 
+                            sx={{ color: blue[500] }} />
+                    </Link>
+                    <Link href="https://instagram.com/bullorbear">
+                        <InstagramIcon 
+                            sx={{ color: pink[500] }} />
+                    </Link>
+                    <Link href="https://discord.gg/bullorbear">
+                        <DiscordIcon />
+                    </Link>
                 </Stack>
             </Stack>
         </Drawer>

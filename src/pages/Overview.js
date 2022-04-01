@@ -11,7 +11,7 @@ const Image = styled('img')({
 export default function Overview () {
     const theme = useTheme();
     return (
-        <Box pb={10}>
+        <Box>
             <Stack alignItems="center" gap={5}>
                 <Typography variant="h1">First P2E Crypto & NFT Trading Competition</Typography>
                 <Box sx={{ flex: '1' }}>

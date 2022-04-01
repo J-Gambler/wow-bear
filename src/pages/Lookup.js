@@ -10,8 +10,8 @@ const Image = styled('img')({
 })
 
 const lookups = [
-    { image: LookupCryptoImage, description: 'Lookup Crypto' },
-    { image: LookupNFTImage, description: 'Lookup NFT' },
+    { image: LookupCryptoImage, description: '/Lookup Crypto' },
+    { image: LookupNFTImage, description: '/Lookup NFT' },
 ]
 export default function Lookup () {
     const theme = useTheme();
@@ -23,7 +23,7 @@ export default function Lookup () {
                 <Box sx={{ flex: '1' }}>
                     <Image src={element.image} />
                 </Box>
-                <Typography variant="h1" sx={{ flex: '1', textAlign: key % 2 ? 'left' : 'right', fontWeight: 400 }} >{element.description}</Typography>
+                <Typography variant="h2" sx={{ flex: '1', textAlign: key % 2 ? 'left' : 'right', fontWeight: 400 }} >{element.description}</Typography>
             </Stack>
             )}
         </Stack>

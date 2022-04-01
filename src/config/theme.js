@@ -18,11 +18,19 @@ const myTheme = createTheme({
             fontFamily: "Gilroy-ExtraBold",
             fontSize: 40,
             fontWeight: 500,
+            color: '#212529',
         },
         h2: {
             fontFamily: "Gilroy-ExtraBold",
             fontSize: 32,
             fontWeight: 500,
+            color: '#87AED0'
+        },
+        h3: {
+            fontFamily: "Gilroy-ExtraBold",
+            fontSize: 32,
+            fontWeight: 500,
+            color: '#212529'
         },
     },
     overrides: {

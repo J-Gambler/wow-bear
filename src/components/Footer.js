@@ -23,12 +23,12 @@ export default function Footer () {
                         <Link href="https://discord.gg/bullorbear">
                             <DiscordIcon />
                         </Link>
-                        <Link href="https://twitter.com">
+                        <Link href="https://twitter.com/bullorbear">
                             <TwitterIcon 
                                 fontSize="large"
                                 sx={{ color: blue[500] }} />
                         </Link>
-                        <Link href="https://instagram.com">
+                        <Link href="https://instagram.com/bullorbear">
                             <InstagramIcon 
                                 fontSize="large"
                                 sx={{ color: pink[500] }} />

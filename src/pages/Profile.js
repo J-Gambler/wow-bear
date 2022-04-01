@@ -9,7 +9,7 @@ const Image = styled('img')({
 })
 
 const profile = [
-    { image: ProfileImage, description: 'Profile' },
+    { image: ProfileImage, description: '/Profile' },
 ]
 export default function Nftlist () {
     const theme = useTheme();
@@ -21,7 +21,7 @@ export default function Nftlist () {
                 <Box sx={{ flex: '1' }}>
                     <Image src={element.image} />
                 </Box>
-                <Typography variant="h1" sx={{ flex: '1', textAlign: key % 2 ? 'left' : 'right', fontWeight: 400 }} >{element.description}</Typography>
+                <Typography variant="h2" sx={{ flex: '1', textAlign: key % 2 ? 'left' : 'right', fontWeight: 400 }} >{element.description}</Typography>
             </Stack>
             )}
         </Box>

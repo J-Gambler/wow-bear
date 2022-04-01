@@ -9,7 +9,7 @@ const Image = styled('img')({
 })
 
 const nftlists = [
-    { image: NftlistImage, description: 'NFT List' },
+    { image: NftlistImage, description: '/NFT List' },
 ]
 export default function Nftlist () {
     
@@ -22,7 +22,7 @@ export default function Nftlist () {
                 <Box sx={{ flex: '1' }}>
                     <Image src={element.image} />
                 </Box>
-                <Typography variant="h1" sx={{ flex: '1', textAlign: key % 2 ? 'left' : 'right', fontWeight: 400 }} >{element.description}</Typography>
+                <Typography variant="h2" sx={{ flex: '1', textAlign: key % 2 ? 'left' : 'right', fontWeight: 400 }} >{element.description}</Typography>
             </Stack>
             )}
         </Box>

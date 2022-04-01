@@ -3,7 +3,7 @@ import * as React from "react"
 const LogoIcon = (props) => (
   <svg
     className="img pt-md-3"
-    width={90}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 99.02 110.01"
     {...props}

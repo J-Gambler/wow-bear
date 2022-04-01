@@ -16,13 +16,19 @@ const Header = ({handleDrawerOpen, drawerOpen}) => {
     const matchUpSm = useMediaQuery(theme.breakpoints.up('sm'));
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="fixed" sx={{ boxShadow: 'unset', p: 2, bgcolor: '#87AED0' }}>
+            <AppBar
+                sx={{ 
+                    boxShadow: matchUpSm ? 'unset': '0 6px 8px -6px #000000', 
+                    py: 1, 
+                    bgcolor: matchUpSm? '#87AED0': 'rgba(65,65,65,0.6)' 
+                }}
+            >
                 <Container>
-                    <Toolbar sx={{ flexDirection: matchUpSm ? 'row' : 'column', justifyContent: 'space-between', alignItems: matchUpSm ? 'center': 'flex-start' }}>
-                        <Stack>
+                    <Toolbar sx={{ flexDirection: 'row' , p: 0, justifyContent: 'space-between', alignItems: 'center' }}>
+                        <Stack sx={{ width: matchUpSm ? '90px': '35px' }}>
                             <LogoIcon />
                         </Stack>
-                        <Stack flexDirection="row" gap={5} alignItems="center">
+                        <Stack flexDirection="row" gap={2} alignItems="center">
                             <Link href="https://discord.gg/bullorbear">
                                 <DiscordIcon />
                             </Link>
@@ -31,7 +37,6 @@ const Header = ({handleDrawerOpen, drawerOpen}) => {
                                 edge="start"
                                 color="inherit"
                                 aria-label="menu"
-                                sx={{ mr: 2 }}
                                 onClick={handleDrawerOpen}
                             >
                                 <MenuIcon fontSize="large" sx={{ color: 'white' }} />

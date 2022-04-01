@@ -9,7 +9,7 @@ const Image = styled('img')({
 })
 
 const leaderboards = [
-    { image: LeaderBoardsImage, description: 'Leader Boards' },
+    { image: LeaderBoardsImage, description: '/Leader Boards' },
 ]
 export default function LeaderBoards () {
     const theme = useTheme();
@@ -21,7 +21,7 @@ export default function LeaderBoards () {
                 <Box sx={{ flex: '1' }}>
                     <Image src={element.image} />
                 </Box>
-                <Typography variant="h1" sx={{ flex: '1', textAlign: key % 2 ? 'right' : 'left', fontWeight: 400 }} >{element.description}</Typography>
+                <Typography variant="h2" sx={{ flex: '1', textAlign: key % 2 ? 'right' : 'left', fontWeight: 400 }} >{element.description}</Typography>
             </Stack>
             )}
         </Box>
