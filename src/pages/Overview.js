@@ -18,8 +18,8 @@ export default function Overview () {
                     <Image src={OverviewImage} />
                 </Box>
                 <Typography sx={{ textAlign: 'left' }}>
-                    BOB holders can compete in quarterly simulation trading competitions in Wolf of Web 3. 
-                    It is a cryptocurrency and NFT market simulation trading game. 
+                    BOB holders can compete in quarterly simulation trading competitions in 
+                    <Typography component="span" color="#87AED0" fontFamily="Gilroy-ExtraBold"> Wolf of Web 3 (WOW3) - a cryptocurrency and NFT market simulation trading game. </Typography>
                     Every holder will start with an equal amount of capital and will have the same chance at success. 
                     The holder that finishes with the highest balance will be rewarded. 
                     Leaderboard winners will be rewarded with ETH payouts, as well as a rare trophy NFT airdrops. 

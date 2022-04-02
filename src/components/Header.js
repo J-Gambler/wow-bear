@@ -14,7 +14,7 @@ const Header = ({handleDrawerOpen}) => {
                 sx={{ 
                     boxShadow: matchUpSm ? 'unset': '0 6px 8px -6px #000000', 
                     py: 1, 
-                    bgcolor: matchUpSm? '#87AED0': 'rgba(65,65,65,0.6)' 
+                    bgcolor: matchUpSm? '#87AED0': '#586672' 
                 }}
             >
                 <Container>
@@ -32,6 +32,7 @@ const Header = ({handleDrawerOpen}) => {
                                 color="inherit"
                                 aria-label="menu"
                                 onClick={handleDrawerOpen}
+                                sx={{ py: 0 }}
                             >
                                 <MenuIcon fontSize="large" sx={{ color: 'white' }} />
                             </IconButton>
