@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import LeaderBoardsList from './pages/LeaderBoardsList';
 import customTheme from './config/theme';
 import { useState } from 'react';
 
@@ -26,6 +27,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/leaderboards" element={<LeaderBoardsList />} />
           </Routes>
           <Footer />
         </BrowserRouter>
